@@ -145,6 +145,9 @@ lazy val examples = project
     name           := "natchez-examples",
     description    := "Example programs for Natchez.",
     libraryDependencies ++= Seq(
-      "org.tpolecat"    %% "skunk-core"    % "0.0.3"
+      "org.tpolecat" %% "skunk-core"          % "0.0.3",
+      "org.http4s"   %% "http4s-dsl"          % "0.20.10",
+      "org.http4s"   %% "http4s-blaze-server" % "0.20.10",
+      "org.http4s"   %% "http4s-blaze-client" % "0.20.10"
     )
   )
